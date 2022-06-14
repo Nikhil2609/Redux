@@ -39,7 +39,7 @@ class DisplayCounter extends Component {
                 <br></br>
 
 
-                <div>
+                <div> 
                     displaycounter
                     <div>Count value:  <b>{this.props.counter.count}</b></div>
                     <button onClick={this.IncrementCounterFromDisplay}>Increment from another file</button> &nbsp;&nbsp;
