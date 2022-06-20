@@ -1,0 +1,47 @@
+REDUX Fundamental and Implementation
+
+defination: 
+ - Redux is a client side state management library (we can manage global state using REDUX)
+
+Fundamental 
+ - Actions (action)
+ - Reducer (a function that is used to modify or update state changes)
+ - store (state)
+
+Implentatation
+ 1) add redux , react-redux npm dependecy  (npm install redux react-redux)
+ 2) provide store to whole app in root file  
+ 	(so that we can access store(state) globally with props (inside class component we can access though props))
+
+ 		<Provider store = {store}> 
+ 			<App />
+ 		</provider>
+ 3) create store ,then reducer , then actions
+
+ 4) mapStateToProps
+	mapDispathToProps
+	export default connect(mapStateToProps,mapDispathToProps)(App)
+
+	- now we can access state using props
+	- also we can update global state using reducer function
+
+ 4) to update state call dispatch method in functional component
+
+==================================================================
+- create file structure for react and redux 
+- provide store to main application
+
+now user state variable in application
+and then dispatch action
+
+we can use global store like this in class component
+
+this.props.counter
+this.props.increment()
+
+mapStateToProps
+mapDispathToProps
+export default connect(mapStateToProps,mapDispathToProps)(App)
+
+note : 
+- upgrade react and react-dom to latest 18.1.0
